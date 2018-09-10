@@ -16,6 +16,7 @@ public class TownFactory {
 			System.out.println("le fichier n'est pas accessible !");
 		}
     }
+    
     public Town getNextTown() {
         String line;
 		try {

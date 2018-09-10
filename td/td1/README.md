@@ -27,11 +27,11 @@ Regardez le code du TD1. Celui-ci représente une application de gestion de cont
 
 | Classe de l'objet | Value ? | Entity ? | Service ? | Aggregate ? |
 | ------------------|---------|----------|-----------|-------------|
-| Address           |         |          |           |             |
-| Contact           |         |          |           |             |
-| Mail              |         |          |           |             |
-| PhoneNumber       |         |          |           |             |
-| Town              |         |          |           |             |
+| Address           |    x    |          |           |             |
+| Contact           |         |     x    |           |             |
+| Mail              |    x    |          |           |             |
+| PhoneNumber       |    x    |          |           |             |
+| Town              |    x    |          |           |             |
 
 La classe Contacts contient un ensemble de contact, c'est un repository.
 

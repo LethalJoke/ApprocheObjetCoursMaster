@@ -13,7 +13,7 @@ public class CatalogImpl implements Catalog {
     private Map<String, Reference> references;
 
     public CatalogImpl() {
-        Map<String, Reference> references = new HashMap<String, Reference>();
+        references = new HashMap<String, Reference>();
     }
 
     public int size() {
@@ -32,7 +32,7 @@ public class CatalogImpl implements Catalog {
     }
 
     public void addReference(Reference reference) {
-        references.put(reference.getId(), reference);
+    		references.put(reference.getId(), reference);
     }
 
     public void removeReference(Reference reference) {

@@ -39,11 +39,15 @@ public class TextualMenu {
             out.println("(1) Add new Reference to Catalog,  (2) exit");
             out.println("Your choice 1-2:");
             String choice = in.readLine();
+            if(choice == null)
+            	throw new IOException("choice == null");
             switch (choice) {
                 case "1" : createReferenceAndAddItToCatalog();
                             break;
                 case "2" : end = true;
+                			break;
                 default : 
+                	break;
             }
         }
     }
@@ -58,6 +62,8 @@ public class TextualMenu {
         String refDescription = in.readLine();
         out.println("Price : ");
         String price = in.readLine();
+        if(price == null)
+        	throw new IOException("Line == null");
         Price refPrice = new Price(Integer.parseInt(price));
         Reference reference = new Reference(refId, refName, refDescription, refPrice);
 
